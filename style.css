@@ -199,7 +199,7 @@ span {
 /*Footer*/
 
 .footer {
- margin-top: 120px;
+ margin-top: 100px;
  border-top: 2px solid grey;
  padding: 2%;
  text-align: center;
@@ -308,19 +308,27 @@ span {
 
 .imagenes {
     display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    margin-left: 50px;
-    margin-right: 50px;
-
-
-    }
+}
 
 .imagenes img {
-    width: 85%;
-    height: 85%;
-    margin-left: 40px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;    
+}
 
+.imagenes1 {
+    /* display: flex; */
+    flex-wrap: wrap;
+    width: 50%;
+
+}
+
+.imagenes2 {
+    /* display: flex; */
+    flex-wrap: wrap;
+    object-fit: cover;
+    width: 50%;
+    
 }
 
 /*Fin HBO*/
@@ -417,7 +425,8 @@ span {
 
 
 .libro1 p {
-    color: indigo;
+    color: rgb(94, 38, 0);
+    font-weight: bold;
 
 }
 
@@ -435,7 +444,8 @@ span {
 }
 
 .libro2 p {
-    color: navy;
+    color: rgb(5, 83, 40);
+    font-weight: bold;
 }
 
 .book2 {
@@ -444,11 +454,12 @@ span {
 
 .libro3 {
     margin: 60px;
-    color: chocolate;
+    
 }
 
 .libro3 p {
-    color: ivory;
+    color: rgb(6, 117, 117);
+    font-weight: bold;
 }
 
 .book3 {
@@ -466,8 +477,8 @@ span {
     display: flex;
     align-items: center;
     padding: 20px;
-    color: chocolate;
-
+    color: rgb(196, 77, 77);
+    font-weight: bold;
 }
 
 .book4 {
@@ -538,10 +549,8 @@ body {
 /* imagenes */
 
 .name-stark {
-    color: whitesmoke;
+    color: rgb(240, 232, 232);
     text-align: center;
-    display: flex;
-    flex-direction: column;
     margin-top: 40px;
     margin-bottom: 10px;
     margin-right: 20%;
@@ -555,6 +564,7 @@ margin-left: 20%;
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 
 .grid-container-pic {
@@ -569,7 +579,6 @@ margin-left: 20%;
 .item:hover {
     filter: opacity(0.9);
     transform: scale(1.2);
-    /* transform: rotateY(180deg); */
 }
 
 .ned {
@@ -605,11 +614,11 @@ margin-left: 20%;
 
 .rickon {
     grid-column: 3;
-    grid-row: 4;
+    grid-row: 3;
 }
 
 .jon {
-    grid-column: 2;
+    grid-column: 2 span;
     grid-row: 4;
 }
 
@@ -673,10 +682,10 @@ margin-left: 20%;
 }
 
 .name-lannister {
-    color: whitesmoke;
+    color: rgb(245, 245, 245);
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -772,21 +781,55 @@ align-self: center;
 }
 
 .name-baratheon {
-    color: whitesmoke;
+    color: rgb(245, 245, 245);
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 80px;
 }
 
 .container-baratheon {
     display: grid;
     grid-template-columns: repeat(3, 24%);
-    grid-template-rows: repeat(4, 24%);
     gap: 20px;
     justify-content: center;
 }
+
+
+.robert {
+    grid-row: 1;
+    grid-column: 1/3 span;
+    
+}
+
+.joffrey {
+    grid-row: 2 span;
+    grid-column: 1;
+    align-self: stretch;
+}
+
+.myrcella {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.tommen {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.stannis {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.renly {
+    grid-row: 3;
+    grid-column: 3;
+}
+
+
 
 /* Fin personajes Baratheon */
 
@@ -844,14 +887,12 @@ align-self: center;
 
 .targaryen-family {
     width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
+    height: 100%;
     margin-top: 50px;
 }
 
 .name-targaryen {
-    color: whitesmoke;
+    color: rgb(247, 241, 241);
     text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -859,12 +900,13 @@ align-self: center;
 
 .container-targaryen {
     display: grid;
-    grid-template-columns: repeat(2, 250px);
-    grid-template-rows: repeat(2, 250px);
-    gap: 20px;
-    position: absolute;
-    margin-top: 7%;
+    grid-template-columns: repeat(2, 35%);
+    grid-template-rows: repeat(2, 35%);
+    margin-top: 50px;
+    margin-left: 25%;
+    gap: 15px;      
 }
+
 
 .daenerys {
     grid-row: 2 span;
