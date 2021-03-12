@@ -1,5 +1,125 @@
-.body {
-  background-image: url(../imagenes/WhiteWalker.jpg);
+@font-face {
+  font-family: "got";
+  src: url("../fonts/Game of Thrones.ttf") format("woff");
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgba(18, 19, 18, 0.933);
+}
+
+/*HEADER*/
+#header {
+  font-family: "got";
+  padding: 50px 25px 0px 25px;
+  background-color: rgba(18, 19, 18, 0.933);
+  letter-spacing: 10px;
+  text-align: center;
+}
+#header h1 {
+  color: #fff0ff;
+  font-size: 38px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Navbar */
+.navbar {
+  width: 90%;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  justify-content: space-evenly;
+  padding-top: 25px;
+}
+.navbar ul {
+  list-style: none;
+}
+.navbar ul li {
+  width: 170px;
+  text-align: center;
+  float: left;
+  color: #fff0ff;
+  font-size: 15px;
+  position: relative;
+}
+ul .navbar ul li:hover {
+  color: #f2f5f7;
+}
+.navbar ul ul {
+  display: none;
+}
+.navbar ul li:hover > ul {
+  display: block;
+  list-style: circle;
+}
+.navbar a {
+  color: #fff0ff;
+  text-decoration: none;
+}
+.navbar a:hover {
+  font-weight: bolder;
+  color: #00d5f1;
+}
+
+.li-casas {
+  display: flex;
+  flex-direction: row;
+  text-align-last: justify;
+  font-size: 100px;
+  padding-left: inherit;
+}
+
+/* FIN HEADER */
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.contenedor .container, .contenedor .container2, .contenedor .container3, .contenedor .container4, .contenedor .container5 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+.contenedor h3 {
+  font-family: "got";
+  font-size: 18px;
+  margin-top: 10px;
+  color: #fff0ff;
+  text-align: center;
+}
+.contenedor h3:hover {
+  font-weight: bolder;
+  font-size: 20px;
+  color: #f54b4b;
+}
+.contenedor .img img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 2px solid;
+  padding: 2%;
+}
+.footer a {
+  font-size: 14px;
+  font-family: "got";
+  text-decoration: none;
+  color: #e5e90f;
+}
+.footer a:hover {
+  color: #f54b4b;
+  font-weight: bolder;
 }
 
 /*# sourceMappingURL=style.css.map */

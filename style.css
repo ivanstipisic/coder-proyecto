@@ -8,6 +8,18 @@
     src: url('fonts/Game\ of\ Thrones.ttf') format('woff');
 }
 
+@keyframes slide{
+    
+    from {
+      margin-left: 0%;
+      width: 70%;
+    }
+  
+    to {
+      margin-left: 100%;
+      width: 70%;
+    }
+  }
 
 /*Index*/
 
@@ -82,6 +94,16 @@ a {
 }
 
 /* FIN HEADER */
+
+/* img */
+
+.imag {
+    animation-duration: 4s;
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    
+  }
+
 
 /* Sintesis */
 
