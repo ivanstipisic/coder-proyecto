@@ -11,13 +11,13 @@
 @keyframes slide{
     
     from {
-      margin-left: 0%;
-      width: 70%;
+      margin-left: -100%;
+      width: 50%;
     }
   
     to {
-      margin-left: 100%;
-      width: 70%;
+      margin-left: 25%;
+      width: 50%;
     }
   }
 
@@ -98,9 +98,11 @@ a {
 /* img */
 
 .imag {
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-name: slide;
-    animation-iteration-count: infinite;
+    animation-iteration-count: unset;
+    max-width: 50%;
+    margin-left: 25%;
     
   }
 
@@ -956,12 +958,13 @@ align-self: center;
 
 /* index*/
 
+
 .navbar .li-libros{
     font-size: 10px;
     text-align: left;
 }
 .navbar .li-casas{
-    font-size: 8px;
+    font-size: 10px;
     text-align: left;
 }
 
@@ -983,8 +986,44 @@ align-self: center;
     display: flex;
     margin-left: 80px;
     list-style: outside;
-
+    cursor: pointer;
+    
 }
+
+.navbar a:hover {
+    font-weight: bolder;
+    color: #00d5f1;
+  }
+  
+/* fin query navbar */
+
+/* body */
+
+@keyframes slide{
+    
+    from {
+      margin-left: -100%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+.imag {
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-iteration-count: unset;
+    margin-left: 0%;
+    
+  }
+
+.imag {
+    max-width: 100%;
+}
+
 
 .sintesis {
     border-radius: 0%;
@@ -998,9 +1037,28 @@ align-self: center;
 
 .george-martin p{
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
-    width: 200%;
+    width: 250%;
 
+}
+
+.george-martin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+
+}
+
+.george-martin img {
+    width: 100%;
+    margin-left: 20%;
+}
+
+.grrm {
+    text-align: center;
+    margin-left: 35%;
 }
 
 .carousel {
@@ -1009,6 +1067,21 @@ align-self: center;
     width: 70%;
     height: 70%;
 }
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    padding: 10px;
+
+}
+
+.footer a {
+    padding: 8px;
+}
+
 
 /* fin index */
     
@@ -1026,7 +1099,9 @@ align-self: center;
     font-size: 10px;
     text-align: left;
     padding-left:0px ;
+    
 }
+
 .navbar-libros .li-serie{
     font-size: 10px;
     text-align: left;
@@ -1035,16 +1110,23 @@ align-self: center;
 .navbar-libros ul{
     display: flex;
     flex-direction: column;
-    margin-left: -45%;
+    margin-left: -50%;
     padding-left: 20px;
+    
 }
 
 .navbar .li-casas-libros li {
-    font-size: 8px;
+    font-size: 10px;
     display: flex;
     margin-left: 80px;
     list-style: outside;
 }
+
+.navbar a:hover {
+    font-weight: bolder;
+    color: #00d5f1;
+  }
+
 
 .body-libros {
        display: flex;
@@ -1080,11 +1162,13 @@ align-self: center;
 .navbar-hbo .li-libros{
     font-size: 10px;
     text-align: left;
+    
 }
 .navbar-hbo .li-casas-hbo{
     font-size: 10px;
     text-align: left;
     padding: 0px;
+    list-style: none;
 }
 .navbar-hbo .li-serie{
     font-size: 10px;
@@ -1092,11 +1176,17 @@ align-self: center;
 }
 
 .navbar-hbo .li-casas-hbo li {
-    font-size: 8px;
+    font-size: 10px;
     display: flex;
     margin-left: 80px;
     list-style: outside;
 }
+
+.navbar a:hover {
+    font-weight: bolder;
+    color: #00d5f1;
+  }
+
 
 
 /* fin-hbo */
@@ -1143,6 +1233,16 @@ align-self: center;
     font-size: 8px;
 }
 
+.navbar a:hover {
+    font-weight: bolder;
+    color: #00d5f1;
+  }
+
+
+.stark-family {
+    margin-bottom: 150px;
+}
+
 /* fin stark */
 
 /* baratheon */
@@ -1180,6 +1280,16 @@ align-self: center;
     display: block;
     list-style: outside;
     padding-left: 90px;
+}
+
+.navbar a:hover {
+    font-weight: bolder;
+    color: #00d5f1;
+  }
+
+
+.baratheon-family {
+    margin-bottom: 80px;
 }
 
 /* fin baratheon */
@@ -1220,7 +1330,19 @@ align-self: center;
     padding-left: 90px;
 }
 
+.navbar a:hover {
+    font-weight: bolder;
+    color: #00d5f1;
+  }
+
+
+.lannister-family {
+    margin-bottom: 100px;
+}
+
 /* fin lannister */
+
+/* targaryen */
 
 .navbar-targaryen {
     border-bottom: 2px solid white ;
@@ -1257,8 +1379,16 @@ align-self: center;
     padding-left: 90px;
 }
 
-/* targaryen */
+.navbar a:hover {
+    font-weight: bolder;
+    color: #00d5f1;
+  }
 
+.targaryen-family {
+    margin-bottom: 80px;
+}
+
+}
 /* fin targaryen */
 
 /* Tablet */

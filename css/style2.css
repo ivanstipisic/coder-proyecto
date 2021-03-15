@@ -5,7 +5,7 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.933);
   }
-/* navbar */
+
   .navbar {
     width: 100%;
   }
@@ -31,11 +31,6 @@
     margin-left: 25px;
   }
 }
-
-/* fin nav */
-
-/* section */
-
 .contenedor .container, .contenedor .container1, .contenedor .container2, .contenedor .container3, .contenedor .container4, .contenedor .container5 {
   flex-direction: column;
 }
@@ -49,10 +44,6 @@
   margin-left: -5%;
 }
 
-/* fin section */
-
-/* footer */
-
 .footer {
   flex-direction: column;
   text-align: center;
@@ -65,13 +56,10 @@
   font-weight: bolder;
 }
 
-/* fin footer */
-
 @font-face {
   font-family: "got";
   src: url("../fonts/Game of Thrones.ttf") format("woff");
 }
-
 * {
   margin: 0px;
   padding: 0px;
@@ -143,9 +131,6 @@ ul .navbar ul li:hover {
 }
 
 /* FIN HEADER */
-
-/* Section */
-
 .contenedor {
   display: flex;
   flex-direction: column;
@@ -178,10 +163,6 @@ ul .navbar ul li:hover {
   border-radius: 50px;
 }
 
-/* Fin Section */
-
-/* Footer */
-
 .footer {
   display: flex;
   justify-content: space-evenly;
@@ -199,6 +180,4 @@ ul .navbar ul li:hover {
   font-weight: bolder;
 }
 
-/* Fin Footer */
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style2.css.map */
