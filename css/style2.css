@@ -37,11 +37,11 @@
 .contenedor .container .img img, .contenedor .container1 .img img, .contenedor .container2 .img img, .contenedor .container3 .img img, .contenedor .container4 .img img, .contenedor .container5 .img img {
   width: 70%;
   border-radius: 0%;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 .contenedor .container h3, .contenedor .container1 h3, .contenedor .container2 h3, .contenedor .container3 h3, .contenedor .container4 h3, .contenedor .container5 h3 {
   font-size: 14px;
-  margin-left: -5%;
+  margin-left: -10%;
 }
 
 .footer {
