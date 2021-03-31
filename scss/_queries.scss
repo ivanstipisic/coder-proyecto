@@ -54,21 +54,27 @@
 
 // section
     .contenedor {
+        
+        
+        h1 {
+            font-size: 14px;
+            text-align: center;
+            
+        }
 
         .container, .container1, .container2, .container3, .container4, .container5 {
 
         flex-direction: column;
         
         .img img {
-            width: 70%;
+            width: 75%;
             border-radius: 0%;
-            margin-left:5%;
-            
+             
             
         }
 
         h3 {
-            font-size: 14px;
+            font-size: 12px;
             margin-left: -10%;
         }
     }

@@ -102,50 +102,58 @@ a {
 
 
 .contenedor {
-    
-        display: flex;      
-        flex-direction: column;
-        margin-top: 30px;
-        margin-left: 10%;
-        margin-right: 10%;
         
-    
+
         .container, .container2, .container3, .container4, .container5 {
             display: flex;
-            flex-wrap: nowrap;
             justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
             width: $w-size;
-            gap: 60px;
             margin-bottom: 60px;
-            
-        } 
+            gap: 20px;
+           
+            .img img {                
+                width: $w-size;
+                border-radius: 10%;
+            }
 
-        h3 {
+            
+                    h3 {
+                        font-family: 'got';
+                        font-size: 14px;
+                        margin-top: 10px;
+                        margin-left: 8px;
+                        color: $color3;
+                        text-align: center;
+                        letter-spacing: 1px;
+                    
+                        &:hover {
+                            font-weight: bolder;
+                            font-size: 16px;
+                            color: $color2;
+
+                    }    
+                     
+                    }
+        } 
+        
+        h1 {
             font-family: 'got';
-            font-size: 18px;
-            margin-top: 10px;
             color: $color1;
             text-align: center;
-        
-            &:hover {
-                font-weight: bolder;
-                font-size: 20px;
-                color: $color2;
-        }    
-         
+            font-size: 25px;
+            letter-spacing: 10px;
+            margin: 40px;
         }
-        
-           
-        .img img {
-            width: $w-size;
-            border-radius:50px ;
 
+          
         }
-    }
 
 
 .footer {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     border-top: 2px solid;
     padding: 2%;
