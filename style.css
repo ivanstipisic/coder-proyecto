@@ -1018,6 +1018,19 @@ align-self: center;
 
 /* fin Personajes Targaryen */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Media queries*/
 
 
@@ -1080,6 +1093,25 @@ align-self: center;
     }
   }
 
+.navbar {
+    padding: 2%;
+    
+}
+
+.navbar ul {
+    padding: 2%;
+}
+
+.navbar ul li {
+    margin-top: 5%;
+}
+
+.navbar .li-casas li {
+    font-size: 10px;
+    margin:10px;
+    margin-top: 10%;
+}
+
 .imag {
     animation-duration: 3s;
     animation-name: slide;
@@ -1104,11 +1136,8 @@ align-self: center;
 }
 
 .george-martin p{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
     width: 250%;
-
+    margin-left: -25px;
 }
 
 .george-martin {
@@ -1127,11 +1156,12 @@ align-self: center;
 .grrm {
     text-align: center;
     margin-left: 35%;
+    letter-spacing: 4px;
 }
 
 .carousel {
     align-content: center;
-    margin: -70px;
+    margin: -50px;
     width: 70%;
     height: 70%;
 }
@@ -1141,9 +1171,8 @@ align-self: center;
     display: flex;
     flex-direction: column;
     margin-top: 0px;
-    margin-bottom: 100px;
     padding: 10px;
-
+    
 }
 
 .footer a {
@@ -1157,6 +1186,8 @@ align-self: center;
 
 .navbar-libros {
     border-bottom: 2px solid white ;
+    padding: 2%;
+    margin-left: -20%;
 }
 
 .navbar-libros .li-libros{
@@ -1179,12 +1210,20 @@ align-self: center;
     display: flex;
     flex-direction: column;
     margin-left: -50%;
-    padding-left: 20px;
+    
     
 }
 
+.navbar-libros ul li {    
+    font-size: 8px;
+    margin-top: 5px;
+    padding: 2px;
+    list-style: none;
+    margin-left: 55px;
+}
+
 .navbar .li-casas-libros li {
-    font-size: 10px;
+    font-size: 8px;
     display: flex;
     margin-left: 80px;
     list-style: outside;
@@ -1199,17 +1238,44 @@ align-self: center;
 .body-libros {
        display: flex;
        flex-direction: column;
-       text-align: center;
        background-image:none;
        background-color: black;
     }
+
+.conteiner-books {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteiner-books h3{
+    font-size: 30px;
+    margin-left:-5%;
+}
+
+.libro2, .libro4 {
+    margin: 0px;
+}
+
+.libro3 {
+    margin-left: 20px;
+}
 
 .book1, .book2, .book3, .book4  {
     display: none;
 
 }
-.libro1, .libro2, .libro3, .libro4 , h3 {
+
+.libro2 h3{
+    margin-left: 0%;
+}
+
+.libro4 h3{
+    margin-left: 0%;
+}
+
+.libro1, .libro2, .libro3, .libro4, h3 {
     color: rgb(236, 18, 138);
+    
 
 }
 .libro1, .libro2, .libro3, .libro4 , p {
@@ -1219,23 +1285,31 @@ align-self: center;
 }
 
 /* serie-hbo */
+
+.navbar-hbo {
+    padding: 5%;
+}
+
 .navbar-hbo ul{
     display: flex;
     flex-direction: column;
-    margin-left: -40%;
-    padding-left: 0;
+    margin-left: -50%;
+    padding-left: 0px;
     
 }
 
-.navbar-hbo .li-libros{
+.navbar-hbo .li-serie{
     font-size: 10px;
     text-align: left;
+    margin: 2%;
     
 }
+
 .navbar-hbo .li-casas-hbo{
     font-size: 10px;
     text-align: left;
-    padding: 0px;
+    margin-top: 5px;
+    padding: 2px;
     list-style: none;
 }
 .navbar-hbo .li-serie{
@@ -1244,10 +1318,13 @@ align-self: center;
 }
 
 .navbar-hbo .li-casas-hbo li {
-    font-size: 10px;
+    font-size: 8px;
     display: flex;
     margin-left: 80px;
     list-style: outside;
+    padding: 1%;
+    
+
 }
 
 .navbar a:hover {
@@ -1255,7 +1332,25 @@ align-self: center;
     color: #00d5f1;
   }
 
+.video {
+    width: 90%;
+    opacity: 90%;
+}
 
+  .contenido {
+    padding: 5%;
+    width: 80%;
+    margin: 20px;
+    
+}
+
+.imagenes1 img {
+    border-radius: 0%;
+}
+
+.imagenes2 img {
+    border-radius: 0%;
+}
 
 /* fin-hbo */
 
@@ -1311,6 +1406,10 @@ align-self: center;
     margin-bottom: 150px;
 }
 
+.grid-container-pic h4 {
+    visibility: hidden;
+}
+
 /* fin stark */
 
 /* baratheon */
@@ -1358,6 +1457,10 @@ align-self: center;
 
 .baratheon-family {
     margin-bottom: 80px;
+}
+
+.container-baratheon  h4 {
+    visibility: hidden;
 }
 
 /* fin baratheon */
@@ -1408,6 +1511,10 @@ align-self: center;
     margin-bottom: 100px;
 }
 
+.lannister-container-pic h4 {
+    visibility: hidden;
+}
+
 /* fin lannister */
 
 /* targaryen */
@@ -1454,6 +1561,10 @@ align-self: center;
 
 .targaryen-family {
     margin-bottom: 80px;
+}
+
+.container-targaryen h4 {
+    visibility: hidden;
 }
 
 }
