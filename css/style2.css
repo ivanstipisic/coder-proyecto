@@ -3,7 +3,7 @@
 @media screen and (max-width: 400px) {
   * {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.933);
+    background-color: black;
   }
 
   .navbar {
@@ -30,32 +30,39 @@
     font-size: 8px;
     margin-left: 25px;
   }
-}
-.contenedor .container, .contenedor .container1, .contenedor .container2, .contenedor .container3, .contenedor .container4, .contenedor .container5 {
-  flex-direction: column;
-}
-.contenedor .container .img img, .contenedor .container1 .img img, .contenedor .container2 .img img, .contenedor .container3 .img img, .contenedor .container4 .img img, .contenedor .container5 .img img {
-  width: 70%;
-  border-radius: 0%;
-  margin-left: 5%;
-}
-.contenedor .container h3, .contenedor .container1 h3, .contenedor .container2 h3, .contenedor .container3 h3, .contenedor .container4 h3, .contenedor .container5 h3 {
-  font-size: 14px;
-  margin-left: -10%;
-}
 
-.footer {
-  flex-direction: column;
-  text-align: center;
-}
-.footer a {
-  padding-bottom: 2px;
-}
-.footer a:hover {
-  color: #e5e90f;
-  font-weight: bolder;
-}
+  .contenedor {
+    text-align: center;
+  }
+  .contenedor h1 {
+    font-size: 18px;
+    margin: 10px;
+    padding: 20px;
+  }
+  .contenedor .container, .contenedor .container1, .contenedor .container2, .contenedor .container3, .contenedor .container4, .contenedor .container5 {
+    flex-direction: column;
+  }
+  .contenedor .container .img img, .contenedor .container1 .img img, .contenedor .container2 .img img, .contenedor .container3 .img img, .contenedor .container4 .img img, .contenedor .container5 .img img {
+    width: 65%;
+    border-radius: 0%;
+    align-content: center;
+  }
+  .contenedor .container h3, .contenedor .container1 h3, .contenedor .container2 h3, .contenedor .container3 h3, .contenedor .container4 h3, .contenedor .container5 h3 {
+    font-size: 15px;
+  }
 
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer a {
+    padding: 2%;
+  }
+  .footer a:hover {
+    color: #e5e90f;
+    font-weight: bolder;
+  }
+}
 @font-face {
   font-family: "got";
   src: url("../fonts/Game of Thrones.ttf") format("woff");
@@ -66,14 +73,14 @@
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.933);
+  background-color: black;
 }
 
 /*HEADER*/
 #header {
   font-family: "got";
   padding: 50px 25px 0px 25px;
-  background-color: rgba(0, 0, 0, 0.933);
+  background-color: black;
   letter-spacing: 10px;
   text-align: center;
 }
@@ -131,40 +138,45 @@ ul .navbar ul li:hover {
 }
 
 /* FIN HEADER */
-.contenedor {
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-  margin-left: 10%;
-  margin-right: 10%;
-}
 .contenedor .container, .contenedor .container2, .contenedor .container3, .contenedor .container4, .contenedor .container5 {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
-  gap: 60px;
   margin-bottom: 60px;
+  gap: 20px;
 }
-.contenedor h3 {
+.contenedor .container .img img, .contenedor .container2 .img img, .contenedor .container3 .img img, .contenedor .container4 .img img, .contenedor .container5 .img img {
+  width: 100%;
+  border-radius: 10%;
+}
+.contenedor .container h3, .contenedor .container2 h3, .contenedor .container3 h3, .contenedor .container4 h3, .contenedor .container5 h3 {
   font-family: "got";
-  font-size: 18px;
+  font-size: 14px;
   margin-top: 10px;
-  color: #fff0ff;
+  margin-left: 8px;
+  color: #e5e90f;
   text-align: center;
+  letter-spacing: 1px;
 }
-.contenedor h3:hover {
+.contenedor .container h3:hover, .contenedor .container2 h3:hover, .contenedor .container3 h3:hover, .contenedor .container4 h3:hover, .contenedor .container5 h3:hover {
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 16px;
   color: #f54b4b;
 }
-.contenedor .img img {
-  width: 100%;
-  border-radius: 50px;
+.contenedor h1 {
+  font-family: "got";
+  color: #fff0ff;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 10px;
+  margin: 40px;
 }
 
 .footer {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   border-top: 2px solid;
   padding: 2%;
